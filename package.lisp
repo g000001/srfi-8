@@ -1,10 +1,10 @@
 ;;;; package.lisp
 
-(cl:in-package :cl-user)
+(cl:in-package #:cl-user)
 
-(defpackage :srfi-8
-  (:export :receive))
+(defpackage "https://github.com/g000001/srfi-8"
+  (:export #:receive))
 
-(defpackage :srfi-8-internal
-  (:use :srfi-8 :cl :fiveam))
+(defpackage "https://github.com/g000001/srfi-8#internals"
+  (:use "https://github.com/g000001/srfi-8" #:cl))
 
